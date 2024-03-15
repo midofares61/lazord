@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صفحة إنشاء حساب</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1e8e8;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url("/02948f98a12e70c3a77ead906ea81218.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .signup-container {
+        width: 300px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+    }
+    .signup-container h2 {
+      text-align: center;
+    }
+    .signup-form {
+      margin-top: 20px;
+    }
+    .signup-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .signup-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .signup-form button:hover {
+      background-color: #0056b3;
+    }
+    .register-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .register-container a{
+        text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h2>إنشاء حساب جديد</h2>
+    <form class="signup-form" action="#" method="post">
+      <input type="text" name="fullname" placeholder="الاسم الكامل" required>
+      <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+      <input type="password" name="password" placeholder="كلمة المرور" required>
+      <input type="password" name="confirm_password" placeholder="تأكيد كلمة المرور" required>
+      <button type="submit">إنشاء الحساب</button>
+      <div class="register-container">
+        <p>لديك حساب ؟</p> <a href="/index.html" class="register-link">قم بتسجيل الدخول</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
